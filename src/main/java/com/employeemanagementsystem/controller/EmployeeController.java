@@ -13,8 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.employeemanagementsystem.Employee;
+
 import com.employeemanagementsystem.dao.EmployeeDAO;
+import com.employeemanagementsystem.entity.Employee;
 
 @RestController
 public class EmployeeController {
@@ -23,7 +24,7 @@ public class EmployeeController {
 	@Value("${app.apikey}")
 	String apikey;
 	@PostMapping("/add")
-	public String saveEmployee(@RequestBody Employee e) {
+	public String saveEmployee(@RequestBody Employeee e) {
 		return  dao.saveEmployee(e);
 	}
 	@GetMapping("/findall")

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.employeemanagementsystem.Employee;
+import com.employeemanagementsystem.entity.Employee;
 import com.employeemanagementsystem.repository.EmployeeJPARepository;
 
 @Repository

@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.employeemanagementsystem.Employee;
+import com.employeemanagementsystem.entity.Employee;
+
+
 
 public interface EmployeeJPARepository extends JpaRepository<Employee, Integer>{
 	public List<Employee> findByName(String name);
