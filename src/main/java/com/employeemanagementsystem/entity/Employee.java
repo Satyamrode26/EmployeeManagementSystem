@@ -1,4 +1,4 @@
-package com.employeemanagementsystem;
+package com.employeemanagementsystem.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
